@@ -29,7 +29,19 @@
 // nicer('mom get the heck in here and bring me a darn sandwich.')
 // > 'mom get the in here and bring me a sandwich.'
 
+var rando2Sentence = 'hello, heck this darn is my random crappy sentence i just made';
+function nicer(str) {
+var oldStr = str.split(" ");
+var cleanStr = ' '
+var newStr = oldStr.filter(words => {
+        if(words !== 'heck' || 'darn' || 'crappy' || 'dang'){
+            return cleanStr += words
+        }
+    })
+    return newStr
+}
 
+console.log(nicer(rando2Sentence));
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function called "capitalizeAll"
@@ -39,15 +51,16 @@
 // Examples:
 // capitalizeAll('hello world') --> 'Hello World'
 // capitalizeAll('every day is like sunday') --> 'Every Day Is Like Sunday'
-var randoSentence = 'hello this is my random sentence i just made'
-function capitalizeAll2(str) {
-var oldStr = str.split(" ")
+
+var randoSentence = 'hello this is my random sentence i just made';
+function capitalizeAll(str) {
+var oldStr = str.split(" ");
 oldStr.forEach(element => {
-    console.log(element.toUpperCase(0))
-})
+    console.log(element.charAt(0).toUpperCase() + element.slice(1));
+    })
 }
 
-capitalizeAll2(randoSentence)
+capitalizeAll(randoSentence);
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function called "split" that does the same thing as String.split

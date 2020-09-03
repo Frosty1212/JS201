@@ -1,15 +1,15 @@
 // TIP: check out this reference for how to sort arrays:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
+var arr1 = [1, 2, 3, 4, 5]
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "alphaSort" that sorts an array of strings alphabetically.
 //
 // Examples:
 // alphaSort(['b', 'a', 'c'])
 // > ['a', 'b', 'c']
-
-function sortAlpha(letters) {
-    return name.sort();  
+var letters = [a, d, c, b]
+function alphaSort(letters) {
+    return letters.sort();  
  }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -17,10 +17,10 @@ function sortAlpha(letters) {
 // each string is. Put the shortest strings first.
 //
 // Examples:
-// strLengthSort(['Apple', 'Banana', 'Cherry'])
-// > ['Apple', 'Cherry', 'Banana']
+var randomString = ['Apple', 'Banana', 'Cherry']
 
-var sortBeta = people.sort(function(a, b){
+
+var strLengthSort = randomString.sort(function(a, b){
     return a.length - b.length;
 });
 
@@ -43,8 +43,9 @@ var sortBeta = people.sort(function(a, b){
 // ])
 // > [[2], [4, 5], [9, 1, 9]]
 
-function sortDelta(arr) {
+function sumSort(arr) {
     var sortedArray = arr.sort((a, b) => {
         return a.reduce(sortCharlie) - b.reduce(sortCharlie)
     })
 }
+console.log(sumSort(arr1))

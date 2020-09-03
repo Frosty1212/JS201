@@ -9,7 +9,7 @@ var employeeOfTheMonth = ['Bill'];
 function recognizeEmployees(emp, empMonth) {
     let newArray = ''
     for(let i = 0; i < emp.length; i++) {
-        for(let j = 0; j < empMonth.length; j++) {
+        for(let j = 0; j < 1; j++) {
             if(emp[i] ==  empMonth[j]){
                 newArray +=`Outstanding job ${empMonth[j]}! `;
             }else(emp[i] !==  empMonth[j]); {

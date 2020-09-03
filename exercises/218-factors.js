@@ -7,7 +7,14 @@
 // gcd(3, 15) --> 3
 // gcd(50, 20) --> 10
 
-
+var gcd = function(a, b) {
+   if (!b) {
+     return a;
+   }
+ 
+   return gcd(b, a % b);
+ }
+ console.log(gcd(20, 10))
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "factors" which is given a number and returns an array

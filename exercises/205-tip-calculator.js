@@ -10,6 +10,20 @@
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
 
+function tipAmount(price, service) {
+    let total = 0;
+    if(service === "good") {
+        total += (price * 0.2)
+    if(service === "fair") {
+        total += (price * 0.2)
+    if(service === "bad") {
+        total += (price * 0.2)
+        }
+    }
+}
+    return total
+}
+console.log(tipAmount(100, "good"))
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,7 +35,20 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
-
+function totalAmount(price, service) {
+    let total = 0;
+    if(service === "good") {
+        total += (price + price * 0.2)
+    if(service === "fair") {
+        total += (price + price * 0.2)
+    if(service === "bad") {
+        total += (price + price * 0.2)
+        }
+    }
+}
+    return total
+}
+console.log(totalAmount(100, "good"))
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "splitAmount" that takes a bill amount, the level of service,
@@ -43,7 +70,7 @@
 // }
 // console.log(tipAmount(100, "good", 2))
 
-function tipAmount(price, service, people) {
+function splitAmount(price, service, people) {
     let total = 0;
     if(service === "good") {
         total += (price + price * .2)
@@ -56,4 +83,4 @@ function tipAmount(price, service, people) {
 }
     return total / people
 }
-console.log(tipAmount(100, "good", 2))
+console.log(splitAmount(100, "good", 2))

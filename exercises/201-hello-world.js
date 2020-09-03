@@ -5,7 +5,14 @@
 // - hello('banana') should return 'Hello, banana!'
 // - hello('DETROIT') should return 'Hello, DETROIT!'
 //Hello, you!
-
+function hello(name) {
+    if(name.length == 0) {
+        return 'Hello, World'
+    }else {
+    return `Hello, ${name}!`
+    }
+}
+console.log(hello('John'))
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "helloDefault" such that if no name is given it will return
@@ -13,11 +20,11 @@
 // Otherwise it behaves the same as the "hello" function.
 
 //Hello, you!
-function hello(name) {
-    if(name == name) {
-        return `Hello, ${name}!`
+function helloDefault(name) {
+    if(name.length == 0) {
+        return 'Hello, World'
     }else {
-    return 'Hello World'
+    return `Hello, ${name}!`
     }
 }
-console.log(hello('John'))
+console.log(helloDefault('John'))

@@ -8,8 +8,6 @@
 // > cipher('We hold these truths to be self-evident', 8)
 // 'em pwtl bpmam bzcbpa bw jm amtn-mdqlmvb'
 
-
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "decipher" which is given a string, a shift, and returns the
 // decoded Caesar cipher message.
@@ -20,7 +18,7 @@
 // > decipher('ehz czlod otgpcrpo ty l hzzo', 11)
 // 'two roads diverged in a wood'
 //part 1
-let ceaserCipher = (str) => { //better way of writing the function =>
+let ceaserCipher = (str) => { //better way of writing the function => function ceaserCipher(
     //Deciphered reference letters
     let code = {
       a: 'q', b: 'p', c: '3',

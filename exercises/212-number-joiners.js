@@ -7,10 +7,12 @@
 function numberJoinerWhile(startNum, endNum) {
     let i = startNum;
     let newString = ''
-    while(i <= endNum){
-        newString += `_${i}`;
+    while(i < endNum){
+        newString += `${i}_`;
         i++;
-    }
+    }if(i = endNum) {
+        newString += `${i}`
+    } 
     return newString
 }
 console.log(numberJoinerWhile(1, 10))
@@ -19,8 +21,10 @@ console.log(numberJoinerWhile(1, 10))
 // except using a "for" loop internally.
 function numberJoinerFor(startNum, endNum) {
     let newString = ''
-    for(let i = startNum; i <= endNum; i++) {
-        newString += `_${i}`
+    for(let i = startNum; i < endNum ; i++) {
+        newString += `${i}_`
+    }if(i = endNum) {
+        newString += `${i}`
     }
     return newString
 }
@@ -35,8 +39,10 @@ console.log(numberJoinerFor(1, 10))
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
 function numberJoinerFancy(startNum, endNum, separator) {
     let newString = ''
-    for(let i = startNum; i <= endNum; i++) {
-        newString += `${separator}${i}`
+    for(let i = startNum; i <= endNum -1; i++) {
+        newString += `${i}${separator}`
+    }if(i = endNum) {
+        newString += `${i}`
     }
     return newString
 }

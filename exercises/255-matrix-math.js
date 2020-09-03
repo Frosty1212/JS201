@@ -4,11 +4,18 @@
 // > matrixAdd([[1, 3], [2, 4]], [[5, 2], [1, 0]])
 // [ [ 6, 5 ], [ 3, 4 ] ]
 
-var addArr = arr1.map(function(arr1, arr2) {
-    return arr1 + arr2;
-});
-
-console.log(addArr(arr1, arr2))
+var firstArr = [[1, 2],[3, 4]]
+var secondArr= [[4, 3],[2, 1]]
+  
+  function matrixAdd(arr1, arr2) {
+      var newArr = []
+      for(let i = 0; i < arr1.length; i++){
+          for(let j = 0; j < 2; j++){
+              newArr.push(arr1[i][j] + arr2[i][j]);
+          }
+      } return newArr
+  }
+console.log(matrixAdd(firstArr, secondArr))
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "matrixMultiply" which is given two two-dimensional arrays;
@@ -20,11 +27,12 @@ console.log(addArr(arr1, arr2))
 // > matrixMultiply([[2, 4], [3, 4]], [[5, 2], [3, 1]])
 // [ [22,  8], [27, 10] ]
 
-var multiplyArr = arr1.map(function(arr1, arr2) {
-    return arr1 * arr2;
-});
-
-var arr1 = [[1, 2],[1, 2]]
-var arr2 = [[1, 2],[1, 2]]
-
-console.log(multiplyArr(arr1, arr2))
+function matrixMultiply(arr1, arr2) {
+    var newArr = []
+    for(let i = 0; i < arr1.length; i++){
+        for(let j = 0; j < 2; j++){
+            newArr.push(arr1[i][j] * arr2[i][j]);
+        }
+    } return newArr
+}
+console.log(matrixMultiply(firstArr, secondArr))

@@ -19,7 +19,7 @@ function  max(bArray) {
 // Example:
 // sumNumbers([1, 4, 8]) --> 13
 
-function sumNumber(arr) {
+function sumNumbers(arr) {
     let sum = 0;
     for (var i = 0; i < arr.length; i++) {
       sum += arr[i];
@@ -28,7 +28,7 @@ function sumNumber(arr) {
   }
   var myArr1 = [1, 2, 3, 4];
 
-  console.log(sumNumber(myArr1));
+  console.log(sumNumbers(myArr1));
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,7 +122,7 @@ let arr1 = [1, 2, 3];
 function squareDance(arr1) {
     let newArraySquared = [];
     for(let i = 0; i < arr1.length; i++) {
-        newArraySquared += (Math. pow(arr1[i], 2)); 
+        newArraySquared += (Math.pow(arr1[i], 2)); 
     }
     return newArraySquared;
 }
