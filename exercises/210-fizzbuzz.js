@@ -13,13 +13,13 @@ function fizzbuzz(inputNum) {
     let newString = ' '
     for(let i = 1; i <=inputNum; i++) {
         if(i % 3 == 0 && i % 5 == 0){
-            newString += 'fizzbuzz'
+            newString += 'fizzbuzz';
         }else if(i % 3 !== 0 && i % 5 == 0) {
-            newString += 'buzz'
+            newString += 'buzz';
         }else if(i % 3 == 0 && i % 5 !== 0) {
-            newString += 'fizz'
-        }else if (i % 3 !== 0 || i % 5 !== 0) {
-            newString += '.'
+            newString += 'fizz';
+        }else (i % 3 !== 0 || i % 5 !== 0) ;{
+            newString += '.';
         }
     } 
     return newString      
